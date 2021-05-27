@@ -1,0 +1,184 @@
+$white: #FFFFFF;
+$black: #000000;
+
+$grey-0: #111111;
+$grey-1: #212121;
+$grey-2: #333333;
+$grey-3: #383838;
+$grey-4: #4A4A4A;
+$grey-5: #636363;
+$grey-6: #999999;
+
+
+// Text 
+
+$font-family-main: Helvetica, Arial, sans-serif;
+$font-family-secondary: Helvetica, Arial, sans-serif;
+
+$h1-fontsize-XS: 2rem;
+$h1-fontsize-SM: 2rem;
+$h1-fontsize-MD: 2.25rem;
+$h1-fontsize-LG: 2.5rem;
+$h1-fontsize-XL: 2.5rem;
+
+$h2-fontsize-XS: 1.5rem;
+$h2-fontsize-SM: 1.5rem;
+$h2-fontsize-MD: 1.6875rem;
+$h2-fontsize-LG: 1.875rem;
+$h2-fontsize-XL: 1.875rem;
+
+$h3-fontsize-XS: 1.375rem;
+$h3-fontsize-SM: 1.375rem;
+$h3-fontsize-MD: 1.5625rem;
+$h3-fontsize-LG: 1.75rem;
+$h3-fontsize-XL: 1.75rem;
+
+$p-XS: 0.9375rem;
+$p-SM: 0.9375rem;
+$p-MD: 1.0625rem;
+$p-LG: 1.125rem;
+$p-XL: 1.125rem;
+
+$p-box-XS: 0.875rem;
+$p-box-SM: 0.875rem;
+$p-box-MD: 0.9375rem;
+$p-box-LG: 1rem;
+$p-box-XL: 1rem;
+
+
+// Common
+
+$m1-XS: 60px;
+$m1-SM: 60px;
+$m1-MD: 70px;
+$m1-LG: 80px;
+$m1-XL: 80px;
+
+$container-sm-width-XS: 100vw;
+$container-sm-width-SM: 540px;
+$container-sm-width-MD: 720px;
+$container-sm-width-LG: 640px;
+$container-sm-width-XL: 760px;
+
+$grid-column-XS: 20px;
+$grid-column-SM: 20px;
+$grid-column-MD: 20px;
+$grid-column-LG: 20px;
+$grid-column-XL: 20px;
+
+$grid-row-XS: 20px;
+$grid-row-SM: 30px;
+$grid-row-MD: 30px;
+$grid-row-LG: 30px;
+$grid-row-XL: 30px;
+
+$grid-p-XS: 15px;
+$grid-p-SM: 15px;
+$grid-p-MD: 17.5px;
+$grid-p-LG: 20px;
+$grid-p-XL: 20px;
+
+$card-p-XS: 15px;
+$card-p-SM: 15px;
+$card-p-MD: 25px;
+$card-p-LG: 30px;
+$card-p-XL: 30px;
+
+$articles-p-y-XS: 25px;
+$articles-p-y-SM: 25px;
+$articles-p-y-MD: 35px;
+$articles-p-y-LG: 35px;
+$articles-p-y-XL: 35px;
+
+
+
+$margins-1-XS: 40px;
+$margins-1-SM: 40px;
+$margins-1-MD: 60px;
+$margins-1-LG: 80px;
+$margins-1-XL: 80px;
+
+$margins-2-XS: 20px;
+$margins-2-SM: 20px;
+$margins-2-MD: 25px;
+$margins-2-LG: 30px;
+$margins-2-XL: 30px;
+
+$margins-3-XS: 5px;
+$margins-3-SM: 5px;
+$margins-3-MD: 7px;
+$margins-3-LG: 10px;
+$margins-3-XL: 10px;
+
+
+// Hero
+
+$header-serie-height-S: 400px;
+$header-serie-height-M: 450px;
+$header-serie-height-L: 500px;
+
+$header-serie-title-width-XS: 100%;
+$header-serie-title-width-SM: 100%;
+$header-serie-title-width-MD: 100%;
+$header-serie-title-width-LG: 800px;
+$header-serie-title-width-XL: 855px;
+
+
+
+$container-small-XS: 100vw;
+$container-small-SM: 540px;
+$container-small-MD: 720px;
+$container-small-LG: 640px;
+$container-small-XL: 760px;
+
+$container-large-XS: 100vw;
+$container-large-SM: 540px;
+$container-large-MD: 720px;
+$container-large-LG: 960px;
+$container-large-XL: 1140px;
+
+
+
+
+$media-show-S: 16px;
+$media-show-M: 18px;
+$media-show-L: 20px;
+
+$content-body-padding-S: 40px;
+$content-body-padding-M: 60px;
+$content-body-padding-L: 80px;
+
+$card-margin-b-S: 20px;
+$card-margin-b-M: 30px;
+$card-margin-b-L: 40px;
+
+$card-icon-size-S: 30px;
+$card-icon-size-M: 32px;
+$card-icon-size-L: 35px;
+
+$card-icon-spacing-S: 10px;
+$card-icon-spacing-M: 12px;
+$card-icon-spacing-L: 15px;
+
+$footer-icon-size-XS: 40px;
+$footer-icon-size-SM: 40px;
+$footer-icon-size-MD: 45px;
+$footer-icon-size-LG: 50px;
+$footer-icon-size-XL: 50px;
+
+
+// Responsive
+
+$breakpoints-min: (
+    SM: 575px,
+    MD: 768px,
+    LG: 992px,
+    XL: 1200px
+);
+
+$breakpoints-max: (
+    XS: 574.98px,
+    SM: 767.98px,
+    MD: 991.98px,
+    LG: 1199.98px
+);

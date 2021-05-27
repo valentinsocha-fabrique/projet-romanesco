@@ -1,0 +1,87 @@
+@mixin responsive-XS {
+    @media screen and (max-width: map-get($breakpoints-max, XS)){
+        @content;
+    }
+}
+
+@mixin responsive-SM {
+    @media screen and (min-width: map-get($breakpoints-min, SM)) and (max-width: map-get($breakpoints-max, SM)){
+        @content;
+    }
+}
+
+@mixin responsive-MD {
+    @media screen and (min-width: map-get($breakpoints-min, MD)) and (max-width: map-get($breakpoints-max, MD)){
+        @content;
+    }
+}
+
+@mixin responsive-LG {
+    @media screen and (min-width: map-get($breakpoints-min, LG)) and (max-width: map-get($breakpoints-max, LG)){
+        @content;
+    }
+}
+
+@mixin responsive-XL {
+    @media screen and (min-width: map-get($breakpoints-min, XL)){
+        @content;
+    }
+}
+
+
+/*-- COMMON --*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+}
+
+
+/*-- CONTAINER --*/
+
+.container-x-l, .container-x-s {
+    box-sizing: border-box;
+}
+
+.container-x-l {
+    margin: 0 auto;
+    @include responsive-XS{
+        width: $container-large-XS;
+        padding-left: $margins-1-SM;
+        padding-right: $margins-1-SM;
+    }
+    @include responsive-SM{
+        width: $container-large-SM;
+    }
+    @include responsive-MD{
+        width: $container-large-MD;
+    }
+    @include responsive-LG{
+        width: $container-large-LG;
+    }
+    @include responsive-XL{
+        width: $container-large-XL;
+    }
+}
+
+.container-x-s {
+    margin: 0 auto;
+    @include responsive-XS{
+        width: $container-small-XS;
+        padding-left: $margins-1-SM;
+        padding-right: $margins-1-SM;
+    }
+    @include responsive-SM{
+        width: $container-small-SM;
+    }
+    @include responsive-MD{
+        width: $container-small-MD;
+    }
+    @include responsive-LG{
+        width: $container-small-LG;
+    }
+    @include responsive-XL{
+        width: $container-small-XL;
+    }
+}

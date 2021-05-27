@@ -1,0 +1,26 @@
+.container-type {
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    @include responsive-XS{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: $container-sm-width-XS;
+    }
+    @include responsive-SM{
+        padding: 0;
+        width: $container-sm-width-SM;
+    }
+    @include responsive-MD{
+        padding: 0;
+        width: $container-sm-width-MD;
+    }
+    @include responsive-LG{
+        padding: 0;
+        width: $container-sm-width-LG;
+    }
+    @include responsive-XL{
+        padding: 0;
+        width: $container-sm-width-XL;
+    }
+}

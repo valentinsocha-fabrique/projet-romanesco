@@ -1,0 +1,11 @@
+{
+    "name": "projet-romanesco",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./assets/design/scss/main.scss:./assets/design/css/main.css"
+    },
+    "author": "",
+    "license": "ISC"
+}
