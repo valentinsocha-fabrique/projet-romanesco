@@ -1,5 +1,201 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <body></body>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CO2 Station</title>
+        <meta name="description" content="Documentation du projet CO2 Station">
+        <meta name="theme-color" content="#000000">
+        <meta name="apple-mobile-web-app-title" content="CO2 Station">
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta property="og:url" content="http://www.valentinsocha.fr/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="CO2 Station">
+        <meta property="og:image" content="http://www.valentinsocha.fr/assets/img/thumbs/thumb_default.png">
+        <meta property="og:description" content="Documentation du projet CO2 Station">
+        <meta property="og:site_name" content="CO2 Station">
+        <meta property="og:locale" content="fr_FR">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@valentinsocha">
+        <meta name="twitter:url" content="http://www.valentinsocha.fr/">
+        <meta name="twitter:title" content="CO2 Station">
+        <meta name="twitter:description" content="Documentation du projet CO2 Station">
+        <meta name="twitter:image" content="http://www.valentinsocha.fr/assets/img/thumbs/thumb_default.png">
+        <link rel="icon" href="./assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href=".assets/img/apple-touch-icon.png">
+        <link rel="stylesheet" href="./assets/design/css/main.css">
+    </head>
+    <body>
+        <main>
+            <section class="project-intro">
+                <h1>CO2 Station</h1>
+                <p>Ce tutoriel vous permettra de réaliser pas à pas un détecteur de CO2. Outre le taux de dioxyde de carbone, cet appareil est capable de mesurer également la température ambiante et le taux d'humidité dans l'air.</p>
+                <p>L'utilisation d'un capteur de CO2 est particulièrement intéressante en ces temps de crise sanitaire, puisqu'elle permet d'évaluer le niveau de confinement d'un espace. Un taux de CO2 élevé traduit une mauvaise aération de l'espace, et donc un risque plus elevé de transmission du virus par voie aérosol.</p>
+            </section>
+            <section class="project-skills">
+                <h2>Matériel</h2>
+                <div class="equipment">
+                    <div class="equipment-category">
+                        <div class="equipment-head">Logiciel</div>
+                        <div class="equipment-list">
+                            <ul>
+                                <li>
+                                    <div class="equipment-item">
+                                        <div class="equipment-thumb">
+                                            <img class="equipment-thumb-img" src="./assets/img/demo_thumb_equipement.jpg" alt="Demo thumb" />
+                                        </div>
+                                        <div class="equipment-data">
+                                            <div class="equipment-data-title">Arduino IDE</div>
+                                            <div class="equipment-data-brand">Windows / macOS / Linux</div>
+                                            <div class="equipment-link">
+                                                <a class="equipment-link-button" href="https://www.arduino.cc/en/software">Télécharger</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment">
+                    <div class="equipment-category">
+                        <div class="equipment-head">Boitier</div>
+                        <div class="equipment-list">
+                            <ul>
+                                <li>
+                                    <div class="equipment-item">
+                                        <div class="equipment-thumb">
+                                            <img class="equipment-thumb-img" src="./assets/img/demo_thumb_equipement.jpg" alt="Demo thumb" />
+                                        </div>
+                                        <div class="equipment-data">
+                                            <div class="equipment-data-title">Coffre</div>
+                                            <div class="equipment-data-brand">Fichier STL</div>
+                                            <div class="equipment-link">
+                                                <a class="equipment-link-button" href="#">Télécharger</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="equipment-item">
+                                        <div class="equipment-thumb">
+                                            <img class="equipment-thumb-img" src="./assets/img/demo_thumb_equipement.jpg" alt="Demo thumb" />
+                                        </div>
+                                        <div class="equipment-data">
+                                            <div class="equipment-data-title">Couvercle</div>
+                                            <div class="equipment-data-brand">Fichier STL</div>
+                                            <div class="equipment-link">
+                                                <a class="equipment-link-button" href="#">Télécharger</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="equipment-item">
+                                        <div class="equipment-thumb">
+                                            <img class="equipment-thumb-img" src="./assets/img/demo_thumb_equipement.jpg" alt="Demo thumb" />
+                                        </div>
+                                        <div class="equipment-data">
+                                            <div class="equipment-data-title">Supports écran LCD</div>
+                                            <div class="equipment-data-brand">Fichier STL</div>
+                                            <div class="equipment-link">
+                                                <a class="equipment-link-button" href="#">Télécharger</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment">
+                    <div class="equipment-category">
+                        <div class="equipment-head">Electronique</div>
+                        <div class="equipment-list">
+                            <ul>
+                                <li>
+                                    <div class="equipment-item">
+                                        <div class="equipment-thumb">
+                                            <img class="equipment-thumb-img" src="./assets/img/demo_thumb_equipement.jpg" alt="Demo thumb" />
+                                        </div>
+                                        <div class="equipment-data">
+                                            <div class="equipment-data-title">Arduino Uno</div>
+                                            <div class="equipment-data-brand">Arduino</div>
+                                            <div class="equipment-data-price">24 €</div>
+                                            <div class="equipment-link">
+                                                <a class="equipment-link-button" href="https://letmeknow.fr/shop/fr/cartes-officielles/1147-a000066-arduino-uno-8058333490090.html">Acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="equipment-item">
+                                        <div class="equipment-thumb">
+                                            <img class="equipment-thumb-img" src="./assets/img/demo_thumb_equipement.jpg" alt="Demo thumb" />
+                                        </div>
+                                        <div class="equipment-data">
+                                            <div class="equipment-data-title">Ecran LCD</div>
+                                            <div class="equipment-data-brand">Grove</div>
+                                            <div class="equipment-data-price">15 €</div>
+                                            <div class="equipment-link">
+                                                <a class="equipment-link-button" href="https://www.lextronic.fr/module-grove-afficheur-lcd-rgb-2x16-29434.html">Acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="equipment-item">
+                                        <div class="equipment-thumb">
+                                            <img class="equipment-thumb-img" src="./assets/img/demo_thumb_equipement.jpg" alt="Demo thumb" />
+                                        </div>
+                                        <div class="equipment-data">
+                                            <div class="equipment-data-title">Capteur CO2, température et humidité</div>
+                                            <div class="equipment-data-brand">Grove</div>
+                                            <div class="equipment-data-price">66 €</div>
+                                            <div class="equipment-link">
+                                                <a class="equipment-link-button" href="https://www.lextronic.fr/capteur-grove-co2-temperature-et-humidite-40619.html">Acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="equipment-item">
+                                        <div class="equipment-thumb">
+                                            <img class="equipment-thumb-img" src="./assets/img/demo_thumb_equipement.jpg" alt="Demo thumb" />
+                                        </div>
+                                        <div class="equipment-data">
+                                            <div class="equipment-data-title">Alimentation 9V</div>
+                                            <div class="equipment-data-price">10 €</div>
+                                            <div class="equipment-link">
+                                                <a class="equipment-link-button" href="https://letmeknow.fr/shop/fr/alimentations-secteurs/1148-alimentation-9v-pour-arduino-0667581892730.html">Acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="equipment-item">
+                                        <div class="equipment-thumb">
+                                            <img class="equipment-thumb-img" src="./assets/img/demo_thumb_equipement.jpg" alt="Demo thumb" />
+                                        </div>
+                                        <div class="equipment-data">
+                                            <div class="equipment-data-title">Câble USB A-B</div>
+                                            <div class="equipment-data-price">2 €</div>
+                                            <div class="equipment-link">
+                                                <a class="equipment-link-button" href="https://letmeknow.fr/shop/fr/usb/622-cable-usb-a-b-652733703880.html">Acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+    </body>
 </html>

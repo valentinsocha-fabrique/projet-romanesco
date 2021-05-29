@@ -1,4 +1,31 @@
-.container-type {
+h1 {
+    font-family: "Manrope", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    color: #111111;
+    margin-top: 0;
+}
+
+p {
+    font-family: $font-family-secondary;
+    font-weight: 400;
+    @include responsive-XS{
+        font-size: $p-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+    }
+}
+
+.project-intro, .project-skills {
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
@@ -23,4 +50,170 @@
         padding: 0;
         width: $container-sm-width-XL;
     }
+}
+
+
+/*-- EQUIPMENT --*/
+
+.equipment {
+    border-radius: 5px;
+    background: $white;
+    @include responsive-XS{
+        margin-bottom: 30px;
+    }
+    @include responsive-SM{
+        margin-bottom: 30px;
+    }
+    @include responsive-MD{
+        margin-bottom: 30px;
+    }
+    @include responsive-LG{
+        margin-bottom: 30px;
+    }
+    @include responsive-XL{
+        margin-bottom: 30px;
+    }
+}
+
+.equipment-head {
+    background: #fff1c9;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: $font-family-secondary;
+    text-transform: uppercase;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: $black;
+    @include responsive-XS{
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    @include responsive-SM{
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    @include responsive-MD{
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    @include responsive-LG{
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    @include responsive-XL{
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+.equipment-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.equipment-list ul li {
+    margin: 0;
+    border-bottom: 2px solid #F4F4F4;
+    font-family: $font-family-secondary;
+    @include responsive-XS{
+        padding: 10px;
+    }
+    @include responsive-SM{
+        padding: 10px;
+    }
+    @include responsive-MD{
+        padding: 12.5px;
+    }
+    @include responsive-LG{
+        padding: 15px;
+    }
+    @include responsive-XL{
+        padding: 15px;
+    }
+}
+
+.equipment-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.equipment-thumb {
+    margin-right: 20px;
+}
+
+.equipment-thumb-img {
+    height: auto;
+    @include responsive-XS{
+        width: 100px;
+    }
+    @include responsive-SM{
+        width: 100px;
+    }
+    @include responsive-MD{
+        width: 100px;
+    }
+    @include responsive-LG{
+        width: 100px;
+    }
+    @include responsive-XL{
+        width: 100px;
+    }
+}
+
+.equipment-list ul li:last-of-type {
+    border: none;
+}
+
+.equipment-data {
+    font-family: $font-family-secondary;
+}
+
+.equipment-data-title {
+    font-weight: 700;
+    color: $black;
+}
+
+.equipment-data-brand {
+    font-weight: 300;
+    color:#a3a3a3;
+}
+
+.equipment-data-price {
+    font-weight: 300;
+    color:#a3a3a3;
+}
+
+.equipment-link {
+    margin-top: 15px;
+}
+
+.equipment-link-button, .equipment-link-button:visited {
+    display: inline-block;
+    background: $primary;
+    border-radius: 5px;
+    font-family: $font-family-secondary;
+    font-weight: 500;
+    color: $black;
+    text-decoration: none;
+    transition: 0.2s;
+    @include responsive-XS{
+        padding: 5px 7px;
+    }
+    @include responsive-SM{
+        padding: 5px 7px;
+    }
+    @include responsive-MD{
+        padding: 5px 7px;
+    }
+    @include responsive-LG{
+        padding: 5px 7px;
+    }
+    @include responsive-XL{
+        padding: 5px 7px;
+    }
+}
+
+.equipment-link-button:hover, .equipment-link-button:focus {
+    background: $yellow-darker-1;
+    transition: 0.2s;
 }

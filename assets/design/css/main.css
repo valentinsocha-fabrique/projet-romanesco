@@ -1,0 +1,415 @@
+/*-- COMMON --*/
+body {
+  background: #F4F4F4;
+  margin: 0;
+  padding: 0;
+}
+
+/*-- CONTAINER --*/
+.container-x-l, .container-x-s {
+  box-sizing: border-box;
+}
+
+.container-x-l {
+  margin: 0 auto;
+}
+@media screen and (max-width: 574.98px) {
+  .container-x-l {
+    width: 100vw;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767.98px) {
+  .container-x-l {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .container-x-l {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .container-x-l {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-x-l {
+    width: 1140px;
+  }
+}
+
+.container-x-s {
+  margin: 0 auto;
+}
+@media screen and (max-width: 574.98px) {
+  .container-x-s {
+    width: 100vw;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767.98px) {
+  .container-x-s {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .container-x-s {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .container-x-s {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-x-s {
+    width: 760px;
+  }
+}
+
+h1 {
+  font-family: "Manrope", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: #111111;
+  margin-top: 0;
+}
+
+p {
+  font-family: "Manrope", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 574.98px) {
+  p {
+    font-size: 0.9375rem;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767.98px) {
+  p {
+    font-size: 0.9375rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  p {
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  p {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+.project-intro, .project-skills {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 574.98px) {
+  .project-intro, .project-skills {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767.98px) {
+  .project-intro, .project-skills {
+    padding: 0;
+    width: 540px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .project-intro, .project-skills {
+    padding: 0;
+    width: 720px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .project-intro, .project-skills {
+    padding: 0;
+    width: 640px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-intro, .project-skills {
+    padding: 0;
+    width: 760px;
+  }
+}
+
+/*-- EQUIPMENT --*/
+.equipment {
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+@media screen and (max-width: 574.98px) {
+  .equipment {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767.98px) {
+  .equipment {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .equipment {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .equipment {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .equipment {
+    margin-bottom: 30px;
+  }
+}
+
+.equipment-head {
+  background: #fff1c9;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Manrope", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #000000;
+}
+@media screen and (max-width: 574.98px) {
+  .equipment-head {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767.98px) {
+  .equipment-head {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .equipment-head {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .equipment-head {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .equipment-head {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+
+.equipment-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.equipment-list ul li {
+  margin: 0;
+  border-bottom: 2px solid #F4F4F4;
+  font-family: "Manrope", Helvetica, Arial, sans-serif;
+}
+@media screen and (max-width: 574.98px) {
+  .equipment-list ul li {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767.98px) {
+  .equipment-list ul li {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .equipment-list ul li {
+    padding: 12.5px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .equipment-list ul li {
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .equipment-list ul li {
+    padding: 15px;
+  }
+}
+
+.equipment-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.equipment-thumb {
+  margin-right: 20px;
+}
+
+.equipment-thumb-img {
+  height: auto;
+}
+@media screen and (max-width: 574.98px) {
+  .equipment-thumb-img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767.98px) {
+  .equipment-thumb-img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .equipment-thumb-img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .equipment-thumb-img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .equipment-thumb-img {
+    width: 100px;
+  }
+}
+
+.equipment-list ul li:last-of-type {
+  border: none;
+}
+
+.equipment-data {
+  font-family: "Manrope", Helvetica, Arial, sans-serif;
+}
+
+.equipment-data-title {
+  font-weight: 700;
+  color: #000000;
+}
+
+.equipment-data-brand {
+  font-weight: 300;
+  color: #a3a3a3;
+}
+
+.equipment-data-price {
+  font-weight: 300;
+  color: #a3a3a3;
+}
+
+.equipment-link {
+  margin-top: 15px;
+}
+
+.equipment-link-button, .equipment-link-button:visited {
+  display: inline-block;
+  background: #ffcb3d;
+  border-radius: 5px;
+  font-family: "Manrope", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.2s;
+}
+@media screen and (max-width: 574.98px) {
+  .equipment-link-button, .equipment-link-button:visited {
+    padding: 5px 7px;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767.98px) {
+  .equipment-link-button, .equipment-link-button:visited {
+    padding: 5px 7px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .equipment-link-button, .equipment-link-button:visited {
+    padding: 5px 7px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .equipment-link-button, .equipment-link-button:visited {
+    padding: 5px 7px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .equipment-link-button, .equipment-link-button:visited {
+    padding: 5px 7px;
+  }
+}
+
+.equipment-link-button:hover, .equipment-link-button:focus {
+  background: #e0b131;
+  transition: 0.2s;
+}
+
+.icon-name {
+  display: inline-block;
+}
+
+.icon-name {
+  background-image: url("url");
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/design/fonts/Manrope-ExtraLight.woff") format("woff"), url("assets/design/fonts/Manrope-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/design/fonts/Manrope-Light.woff") format("woff"), url("assets/design/fonts/Manrope-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/design/fonts/Manrope-Regular.woff") format("woff"), url("assets/design/fonts/Manrope-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/design/fonts/Manrope-Medium.woff") format("woff"), url("assets/design/fonts/Manrope-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/design/fonts/Manrope-SemiBold.woff") format("woff"), url("assets/design/fonts/Manrope-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/design/fonts/Manrope-Bold.woff") format("woff"), url("assets/design/fonts/Manrope-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/design/fonts/Manrope-ExtraBold.woff") format("woff"), url("assets/design/fonts/Manrope-ExtraBold.ttf") format("ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=main.css.map */
